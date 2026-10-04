@@ -1,0 +1,19 @@
+{
+  "name": "vef1-2026-v4-synilausn",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --no-cache",
+    "build": "parcel build",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "parcel": "^2.16.4"
+  }
+}

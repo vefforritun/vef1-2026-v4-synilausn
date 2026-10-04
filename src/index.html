@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❓</text></svg>"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verkefni 4: Spurningaleikur</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Spurningaleikur!</h1>
+
+      <section class="start">
+        <div class="stats">
+          <p>Fjöldi spilaðra leikja: <span class="stats-played">0</span></p>
+          <p>Fjöldi réttra svara: <span class="stats-correct">0</span></p>
+          <p>Fjöldi rangra svara: <span class="stats-incorrect">0</span></p>
+        </div>
+        <button class="start-button">Byrja</button>
+      </section>
+
+      <!-- Fjarlægðu hidden til að sjá viðmót -->
+      <section class="question hidden">
+        <p class="progress">
+          Spurning <span class="current">1</span> af
+          <span class="total">4</span>
+        </p>
+
+        <div class="title">
+          <p class="category">Flokkur</p>
+          <h2 class="question-text">Spurning</h2>
+        </div>
+        <form action="." method="get" class="answer-form">
+          <div class="input-group">
+            <label for="answer">Svar:</label>
+            <input type="text" name="answer" id="answer" autocomplete="off" />
+          </div>
+          <button type="submit">Næsta</button>
+        </form>
+      </section>
+
+      <!-- Fjarlægðu hidden til að sjá viðmót -->
+      <section class="results hidden">
+        <h2>Niðurstöður</h2>
+        <p class="results-summary">
+          Rétt svör: <span class="correct-count">0</span> af
+          <span class="total">4</span>
+        </p>
+        <ol class="results-list">
+          <!-- Niðurstöður bætast við hér með JavaScript, fjarlægðu athugasemd til að sjá dæmi -->
+          <!--
+          <li class="result correct">
+            <p class="result-category">Tónlist</p>
+            <p class="result-question">
+              Hvaða hljómsveit gerði lagið "Hotel California"
+            </p>
+            <p>Þitt svar: <span class="result-answer">eagles</span></p>
+            <p>Rétt svar: <span class="result-correct">Eagles</span></p>
+          </li>
+          <li class="result incorrect">
+            <p class="result-category">Stærðfræði</p>
+            <p class="result-question">Hvað er 12*12</p>
+            <p>Þitt svar: <span class="result-answer">124</span></p>
+            <p>Rétt svar: <span class="result-correct">144</span></p>
+          </li>
+          -->
+        </ol>
+        <button class="restart-button">Spila aftur</button>
+      </section>
+    </main>
+  </body>
+</html>
